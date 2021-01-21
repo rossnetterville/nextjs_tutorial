@@ -20,7 +20,6 @@ export default function Home() {
 
         <div className="bodyText">
             <p>A test Div with some text in a p tag</p>
-            <p>A test Div with some text in a p tag</p>
         </div>
 
         <div className="grid">
