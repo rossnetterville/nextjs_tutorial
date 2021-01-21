@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import  Navbar from '../components/Navbar'
 
 export default function Home() {
   return (
@@ -8,7 +9,7 @@ export default function Home() {
         <title>Page Title! (Update me...)</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <Navbar />
       <main>
         <h1 className="title">
           Welcome to this fancy new site!!
@@ -19,7 +20,24 @@ export default function Home() {
         </p>
 
         <div className="bodyText">
-            <p>A test Div with some text in a p tag</p>
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed tempor augue, mollis condimentum dui. 
+            Curabitur at ultricies turpis, id facilisis elit. Cras volutpat felis eu tellus consequat, nec gravida mi efficitur. 
+            Sed est tellus, hendrerit at mollis sit amet, rhoncus vel diam. Vestibulum placerat non mauris eget volutpat. 
+            Donec eget ornare lectus. Nullam imperdiet sapien pellentesque libero accumsan vehicula. Donec vulputate dapibus 
+            dolor ut posuere. Mauris sagittis eros ut nisi scelerisque, ut imperdiet orci suscipit. Sed rutrum aliquet mauris, 
+            et scelerisque odio fringilla nec. Nam consectetur cursus diam, eget viverra est interdum ut. Quisque ornare faucibus 
+            ante, dignissim consequat sem vulputate ac. Donec vulputate mauris sit amet tempus tincidunt.
+            <br></br>
+            <br></br>
+            Suspendisse aliquet tortor tortor, eu pulvinar nulla tempor sit amet. Morbi ornare malesuada 
+            nunc in tempus. Morbi quis odio diam. Aliquam euismod auctor dolor, vulputate euismod massa egestas in. 
+            Nulla finibus ex in ex imperdiet bibendum. Suspendisse ac quam nisl. Maecenas quis sapien eu sapien condimentum 
+            bibendum eu nec massa. Nam commodo diam sit amet erat eleifend pulvinar non at purus. Donec a pretium purus, a 
+            facilisis est. Aliquam nisl nisi, pulvinar et aliquet non, bibendum sed mauris. Nulla scelerisque volutpat turpis 
+            non sagittis.
+
+            </p>
         </div>
 
         <div className="grid">
@@ -76,6 +94,7 @@ export default function Home() {
           align-items: center;
         }
 
+
         footer {
           width: 100%;
           height: 100px;
@@ -129,7 +148,9 @@ export default function Home() {
 
         .bodyText {
             line-height: 1.5;
+            margin-top: 3rem;
             font-size: 1 rem;
+            max-width: 1000px;
           }
 
         code {
