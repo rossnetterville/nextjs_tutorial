@@ -5,26 +5,23 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
+        <title>Page Title! (Update me...)</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
         <h1 className="title">
-          Read{' '}
-          <Link href="/posts/first-post">
-            <a>the first post</a>
-          </Link>
-          <br></br>
-          <Link href="/test_home">
-            <a>Alternative home page test</a>
-          </Link>
-          
+          Welcome to this fancy new site!!
         </h1>
 
         <p className="description">
-          Get started by editing <code>pages/index.js</code>
+          This doesn't have a real purpose yet, but the learning process is worth it...
         </p>
+
+        <div className="bodyText">
+            <p>A test Div with some text in a p tag</p>
+            <p>A test Div with some text in a p tag</p>
+        </div>
 
         <div className="grid">
           <a href="https://nextjs.org/docs" className="card">
@@ -58,14 +55,7 @@ export default function Home() {
       </main>
 
       <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
+       Some footer text to be replaced with something useful... circa 2021
       </footer>
 
       <style jsx>{`
@@ -138,6 +128,11 @@ export default function Home() {
           font-size: 1.5rem;
         }
 
+        .bodyText {
+            line-height: 1.5;
+            font-size: 1 rem;
+          }
+
         code {
           background: #fafafa;
           border-radius: 5px;
@@ -153,7 +148,7 @@ export default function Home() {
           justify-content: center;
           flex-wrap: wrap;
 
-          max-width: 800px;
+          max-width: 900px;
           margin-top: 3rem;
         }
 
